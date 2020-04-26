@@ -1,0 +1,6 @@
+chromosome	location	repeat_unit_length	repeat_unit_binary	repeat_times	left_flank_binary	right_flank_binary	repeat_unit_bases	left_flank_bases	right_flank_bases
+chr2	39536689	1	3	27	296	553	T	CAGGA	GAGGC
+chr2	47641559	1	0	27	299	687	A	CAGGT	GGGTT
+chr2	95849361	1	3	23	860	738	T	TCCTA	GTGAG
+chr4	55598211	1	3	25	1016	544	T	TTTGA	GAGAA
+chr14	23652346	1	0	21	999	660	A	TTGCT	GGCCA

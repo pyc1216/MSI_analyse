@@ -1,0 +1,50 @@
+[INFO] Loading site(ms=MONO27,pos=39536689)...
+[WARRING] Low Depth(tumor): ms=MONO27, depth=19
+[INFO] Loading site(ms=BAT26_5,pos=47641559)...
+[WARRING] Low Depth(tumor): ms=BAT26_5, depth=46
+[INFO] Loading site(ms=NR24,pos=95849361)...
+[INFO] Loading site(ms=BAT25,pos=55598211)...
+[WARRING] Low Depth(tumor): ms=BAT25, depth=80
+[INFO] Loading site(ms=NR21,pos=23652346)...
+
+(process:53667): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+//bin/dbus-launch terminated abnormally with the following error: Autolaunch requested, but X11 support not compiled in.
+Cannot continue.
+
+[INFO] ms=BAT26_5,pos=47641559
+[INFO] normal_dis = [2, 2, 2, 2, 18, 35, 76, 83, 204, 328, 372, 247, 78, 24, 3, 3]
+[INFO] tumor_dis = [0, 0, 0, 0, 0, 1, 1, 2, 8, 4, 13, 13, 3, 1, 0, 0]
+[INFO] normal_dis_filter2 = []
+[INFO] tumor_dis_filter2 = []
+[WARRING] Filter #4 not applied, p_value(0.977860676636) not reliable!
+****************************************************************************************************
+[INFO] ms=BAT25,pos=55598211
+[INFO] normal_dis = [2, 12, 15, 36, 50, 139, 292, 612, 522, 160, 34, 9, 2, 1]
+[INFO] tumor_dis = [0, 0, 8, 2, 4, 4, 13, 34, 13, 2, 0, 0, 0, 0]
+[INFO] normal_dis_filter2 = [156.04, 133.1]
+[INFO] tumor_dis_filter2 = [8.67, 3.31]
+****************************************************************************************************
+[INFO] ms=NR24,pos=95849361
+[INFO] normal_dis = [0, 2, 13, 16, 42, 160, 292, 262, 71, 28, 4, 2]
+[INFO] tumor_dis = [2, 6, 16, 27, 63, 95, 288, 186, 65, 18, 0, 2]
+[INFO] normal_dis_filter2 = [4.86, 12.76, 48.6, 88.7, 79.59, 21.57, 8.51]
+[INFO] tumor_dis_filter2 = [8.2, 19.14, 28.86, 87.48, 56.5, 19.74, 5.47]
+****************************************************************************************************
+[INFO] ms=MONO27,pos=39536689
+[INFO] normal_dis = [2, 2, 1, 1, 14, 11, 26, 37, 84, 168, 74, 90, 113, 50, 16, 3]
+[INFO] tumor_dis = [0, 0, 0, 0, 2, 0, 2, 1, 0, 4, 4, 1, 5, 0, 0, 0]
+[INFO] normal_dis_filter2 = []
+[INFO] tumor_dis_filter2 = []
+[WARRING] Filter #4 not applied, p_value(0.478517895113) not reliable!
+****************************************************************************************************
+[INFO] ms=NR21,pos=23652346
+[INFO] normal_dis = [0, 0, 2, 7, 5, 11, 29, 46, 84, 227, 397, 375, 124, 35, 6, 1, 1]
+[INFO] tumor_dis = [4, 6, 0, 2, 0, 0, 0, 0, 2, 23, 39, 43, 18, 5, 1, 0, 0]
+[INFO] normal_dis_filter2 = [76.53, 133.85, 126.43]
+[INFO] tumor_dis_filter2 = [7.75, 13.15, 14.5]
+****************************************************************************************************
+p_value= 0.977860676636 	q_value= 0.977860676636
+p_value= 0.339141880299 	q_value= 0.847854700748
+p_value= 0.188058597827 	q_value= 0.940292989136
+p_value= 0.478517895113 	q_value= 0.797529825189
+p_value= 0.921811825628 	q_value= 0.99
