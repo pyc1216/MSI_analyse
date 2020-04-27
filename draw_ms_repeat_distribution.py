@@ -21,6 +21,8 @@
 
 from __future__ import print_function
 import sys
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import chi2_contingency
@@ -29,10 +31,11 @@ import math
 
 ## key=pcr msi site name, value=position in genome(hg19)
 ALL_MS = {
-'MONO27': 39536689, 
-'BAT26_5': 47641559, 
-'NR24': 95849361, 
-'BAT25': 55598211, 
+'MONO27': 39536689,
+'MONO27(*)': 39564893,
+'BAT26_5': 47641559,
+'NR24': 95849361,
+'BAT25': 55598211,
 'NR21': 23652346
 }
 
@@ -161,7 +164,8 @@ def draw(dict_ms, out_fig):
 		plt.plot(range(1, len_x+1), normal_dis_p[:len_x], 'b', label='normal')
 		plt.plot(range(1, len_x+1), tumor_dis_p[:len_x], 'r', label='tumor')
 		plt.annotate(s=ms, xy=(40, 0.6 * y_max), fontweight='bold')
-		plt.annotate(s='p=' + str(q_value), xy=(40,0.3 * y_max))
+		#plt.annotate(s='p=' + str(q_value), xy=(40,0.3 * y_max))
+		plt.annotate(s='p={:.4f}'.format(q_value), xy=(40,0.3 * y_max))
 		if i != (total_num - 1):
 			axes.set_xticks([])
 		else:
@@ -177,7 +181,7 @@ def draw(dict_ms, out_fig):
 			plt.savefig(out_fig)
 		else:
 			return
-	plt.show()
+	#plt.show()
 	
 
 
